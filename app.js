@@ -18,6 +18,7 @@ app.post("/usersdata",async function(req,res){
     })
     console.log(email,username,password);
     res.send("done created successfully")
+    res.redirect("/")
 
 })
 const db=require('./config/dbconfig')
